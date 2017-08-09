@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="CrmScripter.exe" version="1.0.20.27" publicKeyToken="3ea5fb4ecc763019" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="CrmScripter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="CrmScripter.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CrmScripter.exe" size="194056">
+      <assemblyIdentity name="CrmScripter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jF1aKe4f/o1KqBjpYF11yxoQ4swyenxlY5c8hnCza/Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DotNetZip.dll" size="456704">
+      <assemblyIdentity name="DotNetZip" version="1.10.1.0" publicKeyToken="6583C7C814667745" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Rr9fGCh19TmUtr7oEFcPhbKzlkPCfrvud85VSx47btQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Crm.Sdk.Proxy.dll" size="225496">
+      <assemblyIdentity name="Microsoft.Crm.Sdk.Proxy" version="8.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ppf5koc53JW8zFv3sZSbha+ExsMQxBSR6mmIKel+s3o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualBasic.PowerPacks.dll" size="269568">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks" version="12.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>9SpbDh0TsZfUzAYy9xwqO8RKYqWm3x7iEW1lR4k90vY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Xrm.Sdk.dll" size="521944">
+      <assemblyIdentity name="Microsoft.Xrm.Sdk" version="8.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Tc0VwSMdhyU85yj25FcoN/3cGoS5blWbRqPbOwXQs3U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Xrm.Sdk.Deployment.dll" size="98008">
+      <assemblyIdentity name="Microsoft.Xrm.Sdk.Deployment" version="8.0.0.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vips0W9w7CM6amH715f39jkqJKHqV4UgvLq05JBOaYE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="526336">
+      <assemblyIdentity name="Newtonsoft.Json" version="9.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>V14w+Y5OpCyeUW7ci7sprYtQsXOj5rNrW6OeEzzOlAY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="CrmScripter.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=NAVERTICA a.s., OU=320, O=NAVERTICA a.s., STREET=Sumavska 416/15, L=Brno, S=JM, PostalCode=60200, C=CZ" issuerKeyHash="299160ff8a4dfaebf9a66ab8cff9e64bbd49ce12" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ySvxoCtW/oOI/PEXxYZxDeMMtFnF72Q8UM7aWTdc//s=</DigestValue></Reference></SignedInfo><SignatureValue>Q9MYQyHNkQVc77X1PAZiUgvBYpx3POu45ULs2OKTz7fnRlQIctlYBtxOtH7mdXvPUdmCwseNJmKi9R+2bSL0PB4IhUmws+PMbZ/OYyfX5jtVlGQzzNLXM9VIVxRZkJ6Fb9SW+RWvpG5vRTgJ0Ow5cB4a9SskjqN3DcX/JdQvgyamU1xu59VZhCbRseGvZ+EmrZVJ9h0LoGp/AJ1PGpGOMlwCMA6ooWAkMyFtmEns8FaQwoe1jrBLjvO+mGkvD1Bl2XXCBwswqCVZ1HPTL+JKsZSubLRKzidRVQK1O6msOcfgmbWYgUj9mmqpVfHbsrnKTHhWkcySFsLb7JGAyUa1ng==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qCl5WugYAu4AqTFmn4jxkGqWmnGaO+toFPgdU46TPqZvxGI/LSxE/LMcRKtazFfwYnVrh5RkI4CuooJArjMC/d2lW/vgEnvJmccCzaznNtsUhhmCbYOpgWrZQzh/T5LnBnqXEmFk4za9q4af3TNWZVLlMh0sQoWgcIX4vVV//PCqvhVm1Wy8wNer9D/H7vLpTgJMIMNIeIhLw7+pVf8SBJVHmtQWyphuonwBq1Wpqq+IlTTq6PFuyu8eHPs+MTPH1Mdfz3spAJC1R9BhEv1TBVdeZOiOxkNxc7cFnasLqQqhclHDPZRyNU2hQP4RbCon7R73CWqPIIibAWRyWP2YqQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="fbff5c3759dace503c64efc559b40ce30d7186c517f1fc8883fe562ba0f12bc9" Description="" Url=""><as:assemblyIdentity name="CrmScripter.exe" version="1.0.20.27" publicKeyToken="3ea5fb4ecc763019" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=NAVERTICA a.s., OU=320, O=NAVERTICA a.s., STREET=Sumavska 416/15, L=Brno, S=JM, PostalCode=60200, C=CZ</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>QLoWtLIGUhjhUaJ19+JsHBQQwspCjeU+WIEEbPQmZCQ=</DigestValue></Reference></SignedInfo><SignatureValue>MKhBAz0L2x0ncSwSsIe81DZfik7vCBcsOQzXlQc9yplYpEn04k/KzrIgjybIIfkNZVOH6Knlpmw527J1fgAC8ArqIkd0eNpJ9zNx7brMGiNR6nmbip7T08oKd4s9BByBG8V8eEu4rSREl0A9CZCwADvC38/2Q2Hz6VLdLdA+xrTMLoMZ01HjLGg7QtTDb8VoRGdgmLCJmQIc7Kdo/vpa14+idSKPImXIPxybuHbxH5inEuCrNAjG5OR7xlSwacjVD46WqmWpMhn2GwuClfqnCf0zmTnKii0XZqsc1DRAdAMib6MVHbjjxjMAWTCBAWRC7pNOl47UJpQ6GUl3eFIU6A==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qCl5WugYAu4AqTFmn4jxkGqWmnGaO+toFPgdU46TPqZvxGI/LSxE/LMcRKtazFfwYnVrh5RkI4CuooJArjMC/d2lW/vgEnvJmccCzaznNtsUhhmCbYOpgWrZQzh/T5LnBnqXEmFk4za9q4af3TNWZVLlMh0sQoWgcIX4vVV//PCqvhVm1Wy8wNer9D/H7vLpTgJMIMNIeIhLw7+pVf8SBJVHmtQWyphuonwBq1Wpqq+IlTTq6PFuyu8eHPs+MTPH1Mdfz3spAJC1R9BhEv1TBVdeZOiOxkNxc7cFnasLqQqhclHDPZRyNU2hQP4RbCon7R73CWqPIIibAWRyWP2YqQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIFSTCCBDGgAwIBAgIQFofLq4Q6TZ+DUZ7yNwZa8TANBgkqhkiG9w0BAQsFADB9MQswCQYDVQQGEwJHQjEbMBkGA1UECBMSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYDVQQHEwdTYWxmb3JkMRowGAYDVQQKExFDT01PRE8gQ0EgTGltaXRlZDEjMCEGA1UEAxMaQ09NT0RPIFJTQSBDb2RlIFNpZ25pbmcgQ0EwHhcNMTYxMjAxMDAwMDAwWhcNMTkxMjAxMjM1OTU5WjCBkzELMAkGA1UEBhMCQ1oxDjAMBgNVBBEMBTYwMjAwMQswCQYDVQQIDAJKTTENMAsGA1UEBwwEQnJubzEYMBYGA1UECQwPU3VtYXZza2EgNDE2LzE1MRcwFQYDVQQKDA5OQVZFUlRJQ0EgYS5zLjEMMAoGA1UECwwDMzIwMRcwFQYDVQQDDA5OQVZFUlRJQ0EgYS5zLjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKgpeVroGALuAKkxZp+I8ZBqlppxmjvraBT4HVOOkz6mb8RiPy0sRPyzHESrWsxX8GJ1a4eUZCOArqKCQK4zAv3dpVv74BJ7yZnHAs2s5zbbFIYZgm2DqYFq2UM4f0+S5wZ6lxJhZOM2vauGn90zVmVS5TIdLEKFoHCF+L1Vf/zwqr4VZtVsvMDXq/Q/x+7y6U4CTCDDSHiIS8O/qVX/EgSVR5rUFsqYbqJ8AatVqaqviJU06ujxbsrvHhz7PjEzx9THX897KQCQtUfQYRL9UwVXXmTojsZDcXO3BZ2rC6kKoXJRwz2UcjVNoUD+EWwqJ+0e9wlqjyCImwFkclj9mKkCAwEAAaOCAawwggGoMB8GA1UdIwQYMBaAFCmRYP+KTfrr+aZquM/55ku9Sc4SMB0GA1UdDgQWBBRc7XZsuP8j39DesYlcSpM1PMBICTAOBgNVHQ8BAf8EBAMCB4AwDAYDVR0TAQH/BAIwADATBgNVHSUEDDAKBggrBgEFBQcDAzARBglghkgBhvhCAQEEBAMCBBAwRgYDVR0gBD8wPTA7BgwrBgEEAbIxAQIBAwIwKzApBggrBgEFBQcCARYdaHR0cHM6Ly9zZWN1cmUuY29tb2RvLm5ldC9DUFMwQwYDVR0fBDwwOjA4oDagNIYyaHR0cDovL2NybC5jb21vZG9jYS5jb20vQ09NT0RPUlNBQ29kZVNpZ25pbmdDQS5jcmwwdAYIKwYBBQUHAQEEaDBmMD4GCCsGAQUFBzAChjJodHRwOi8vY3J0LmNvbW9kb2NhLmNvbS9DT01PRE9SU0FDb2RlU2lnbmluZ0NBLmNydDAkBggrBgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMB0GA1UdEQQWMBSBEmluZm9AbmF2ZXJ0aWNhLmNvbTANBgkqhkiG9w0BAQsFAAOCAQEAe6wfy5BicRph4ESaqkRaqbmO1oK750CuCsoq6TypYTT6z7v07Egyj2fQkxGij/xwx//HI2HyLyuqPnsH5KBOQ6IFH6B+atgrfXZioaZx/hT0UvIvyN+UIDttBTyKCBF8GfbxKt8Ts09JWPY1exwswvUyrb0DD+rxUe0zcVNp6Sgc0yxgbuSgaHfi7yiPJ15LcGj+PQi/ZDcP24Sm+vNVpIZOo9fZWGMi7Mcjho29B9uTvdc+mHs+x+jKfhgFRqsgVkzoGTiSD0GB2OZPWPBL+tgbn+6lCXm5GAoBjTbDGyW+VkFxGZVAHTulYu2avK2Bvlqy4fu6bpa+AJiZHLcdqQ==</X509Certificate><X509Certificate>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</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
